@@ -123,11 +123,11 @@ def test_judge_IsoscelesTriangle():
 
     triangle_ABC = Triangle(point_A, point_B, point_C)
 
-    Segment.length_equ(segment_AB, Y)
-    print("length_equ with " + segment_AB.get_name() + ": " + str(Y))
-
-    Segment.obj_equ[segment_AB] == X
-    print("obj_equ with " + segment_AB.get_name() + ": " + str(X))
+    # Segment.length_equ(segment_AB, Y)
+    # print("length_equ with " + segment_AB.get_name() + ": " + str(Y))
+    #
+    # Segment.obj_equ[segment_AB] == X
+    # print("obj_equ with " + segment_AB.get_name() + ": " + str(X))
 
     Triangle.IsoscelesTriangle(triangle_ABC, X)
     print(X)

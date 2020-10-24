@@ -1,0 +1,10 @@
+when
+	$triangle: IsoscelesTriangle($segment_AB: segment_AB, $segment_AC: segment_AC, $segment_BC: segment_BC)
+then
+	if ($triangle.top_point.equals($triangle.point_A)){
+		insert(new Equality(new Express($segment_AB.name), new Express($segment_AC.name)));
+	} else if ($triangle.top_point.equals($triangle.point_B)){
+		insert(new Equality(new Express($segment_AB.name), new Express($segment_BC.name)));
+	} else if ($triangle.top_point.equals($triangle.point_C)){
+		insert(new Equality(new Express($segment_AC.name), new Express($segment_BC.name)));
+	}

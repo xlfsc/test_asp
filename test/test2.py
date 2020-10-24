@@ -8,6 +8,7 @@ from pyDatalog import pyDatalog
 # """)
 
 pyDatalog.load("""
+    length_equ(Y, Z) <= IsoscelesTriangle(X) & 
     Triangle.triangle_name(X, Y) <= (Triangle(X)) & ('ABC' == Y)
     + (Triangle('AB'))
 
